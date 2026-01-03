@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Taboa Orgânicos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌿 Taboa Orgânicos</h1>
+  <p>Da roça para sua mesa – Baixada Santista</p>
+</header>
+
+<main>
+
+  <!-- CATEGORIAS -->
+  <section id="categorias">
+    <h2>Escolha um setor</h2>
+
+    <div class="grid">
+      <button onclick="filtrarCategoria('Frutas')">🍎 Frutas</button>
+      <button onclick="filtrarCategoria('Verduras')">🥬 Verduras</button>
+      <button onclick="filtrarCategoria('Legumes')">🥕 Legumes</button>
+      <button onclick="filtrarCategoria('Mercearia')">🥖 Mercearia</button>
+      <button onclick="filtrarCategoria('Artesanais')">🍰 Artesanais</button>
+      <button onclick="filtrarCategoria('Hot')">🌶️ Hot Fruit</button>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section id="produtos">
+    <h2>Produtos</h2>
+    <div id="listaProdutos"></div>
+  </section>
+
+  <!-- CESTA -->
+  <section id="cesta">
+    <h2>🧺 Sua cesta</h2>
+    <ul id="itensCesta"></ul>
+    <p><strong>Total: R$ <span id="total">0.00</span></strong></p>
+
+    <button class="finalizar" onclick="finalizarPedido()">
+      Finalizar no WhatsApp
+    </button>
+  </section>
+
+</main>
+
+<footer>
+  <p>📲 Pedidos: (13) 98150-9312</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
